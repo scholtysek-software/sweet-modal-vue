@@ -249,7 +249,7 @@
 
 				setTimeout(() => this.visible = true, 30)
 				this.$emit('open')
-				this.$parent.$emit('open')
+				this.$parent.$emit('sweet-modal-vue-open')
 			},
 
 			/**
@@ -262,7 +262,7 @@
 
 				setTimeout(() => this.is_open = false, 300)
 				this.$emit('close')
-				this.$parent.$emit('close')
+				this.$parent.$emit('sweet-modal-vue-close')
 			},
 
 			/**
