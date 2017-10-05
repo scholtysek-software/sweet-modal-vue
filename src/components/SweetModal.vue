@@ -249,6 +249,7 @@
 
 				setTimeout(() => this.visible = true, 30)
 				this.$emit('open')
+				this.$parent.$emit('open')
 			},
 
 			/**
@@ -261,6 +262,7 @@
 
 				setTimeout(() => this.is_open = false, 300)
 				this.$emit('close')
+				this.$parent.$emit('close')
 			},
 
 			/**
